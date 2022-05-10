@@ -1,0 +1,46 @@
+h1 {
+    color:blueviolet;
+    text-align: center;
+    font-size:150px;
+    background-color: aquamarine;
+}
+body {
+    background-color: aqua;
+}
+
+button {
+    background-color: chartreuse;
+    width: 600px;
+    height: 150px;
+    font-size: 90px;
+    margin-left: 155px;
+}
+button:hover {
+    background-color: orangered;
+}
+
+input {
+    width: 450px;
+    height: 70px;
+    font-size: 64px;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+select {
+    width: 450px;
+    height:100px;
+    margin-left: 120px;
+    font-size: 70px;
+    background-color:orange;
+    text-align: center;
+}
+li {
+    font-size:60px;
+    margin-left: 100px;
+}
+
+div {
+    text-align: left;
+    font-size: 50px;
+    margin-top: 75px;
+}
