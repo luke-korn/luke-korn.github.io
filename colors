@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://github.com/luke-korn/luke-korn.github.io/blob/master/style.css">
         <title>Colors</title>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
