@@ -1,55 +1,31 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Animate</title>
-    <style>
-        @keyframes grow {
-            0% {
-                font-size: 2px;
-                color: blueviolet;
-                
-                left: 0%;
-            }
-            50% {
-                font-size: 100px;
-                color: red;
-                
-                left: 50%;
-            }
-            100% {
-                left:0%;
-                font-size: 300px;
-                color: darkgreen;
-            }
-        }
-        h1 {
-            position:relative;
-            animation-name:grow;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-            text-align:left;
-            animation-iteration-count: infinite;
-        }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const h1 = document.querySelector('h1');
-            h1.style.animationPlayState = 'paused';
-            document.querySelector('button').onclick = () => {
-                if (h1.style.animationPlayState === 'paused') {
-                    h1.style.animationPlayState = 'running';
-                } else {
-                    h1.style.animationPlayState = 'paused';
+        <link rel="stylesheet" href="style.css">
+        <title>Colors</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('h1').onmouseover = () => {
+                    document.querySelector('body').style.backgroundColor = 'yellow';
+                };
+                document.querySelector('select').onmouseover = () => {
+                    document.querySelector('body').style.backgroundColor = 'aqua'
                 }
-            }
+                document.querySelector('select').onchange = function() {
+                    document.querySelector('#hell').style.color = this.value;
+                }
+            });
 
-        })
-    </script>
+        </script>
     </head>
-    
     <body>
-        <button>Click Here!</button>
-        <h1>Welcome!</h1>
+        <h1 id='hell'>Hello!!!</h1>
+        <select>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
     </body>
 </html>
